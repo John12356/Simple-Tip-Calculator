@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <!-- <h4 id="main">S P L I<br>T T E R</h4> -->
+<div class="all">
+  <div class="left">
+    <p class="bill">Bill</p>
+    <div class="ip1">
+      <img src="images/icon-dollar.svg">
+      <input id="billval" class="price" type="number" placeholder="0">
+    </div>
+    <p class="bill">Select Tip %</p>
+    <div class="tipbut">
+      <button class="pbt" value="0.05" onclick="addtip(this)">5%</button>
+      <button class="pbt" value="0.1" onclick="addtip(this)">10%</button>
+      <button class="pbt" value="0.15" onclick="addtip(this)">15%</button>
+      <button class="pbt" value="0.25" onclick="addtip(this)">25%</button>
+      <button class="pbt" value="0.5" onclick="addtip(this)">50%</button>
+      <input id="cutom" class="customtip" onclick="addtip(this)" type="number" placeholder="Custom">
+    </div>
+    <p class="bill">Number Of People</p>
+    <div class="ip2">
+      <img src="images/icon-person.svg">
+      <input id="perval" class="people" type="number" placeholder="0">
+    </div>
+  </div>
+  <div class="right">
+    <div class="billamt">
+      <p class="dollar">$ <span id="tamt">0.00</span></p>
+      <h5 class="pert">Tip Amount</h5>
+      <p class="perp">/person</p>
+    </div>
+    <div class="billamt">
+      <p class="dollar">$ <span id="toamt">0.00</span></p>
+      <h5 class="pert">Total</h5>
+      <p class="perp">/person</p>
+    </div>
+    <button class="res" onclick="Reset()">RESET</button>
+  </div>
+</div>
+ 
+</body>
+<script src="script.js"></script>
+</html>
